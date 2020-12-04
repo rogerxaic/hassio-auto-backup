@@ -8,7 +8,7 @@ Based on cron-mega-backup, adds PSQL client v13.
 docker build . -t rogermiret/auto-backup
 ```
 
-## Run
+## Run (cron job)
 
 ``` shell
 docker run -d \
@@ -26,4 +26,12 @@ docker run -d \
   --env PGUSER=xxxxxxxx \
   --env PGPASSWORD=xxxxxxxx \
   rogermiret/auto-backup
+```
+
+## Run (manually) 
+
+This requires that the container is running (see "Run (cron job)").
+
+``` shell
+docker exec auto-backup /backup.sh
 ```
