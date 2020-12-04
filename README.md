@@ -30,7 +30,7 @@ docker run -d \
 
 ## Run (manually) 
 
-This requires that the container is running (see "Run (cron job)").
+This requires that the container is running (see "[Run (cron job)](#run-cron-job)").
 
 ``` shell
 docker exec auto-backup /backup.sh
